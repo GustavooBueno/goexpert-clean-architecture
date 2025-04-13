@@ -21,5 +21,5 @@ EXPOSE 8080
 EXPOSE 8000
 EXPOSE 50051
 
-# Comando para aguardar o banco de dados e então iniciar a aplicação
-CMD ["/wait-for-it.sh", "db:5432", "--", "./goexpert-clean-architecture"]
+# Comando para aguardar os serviços e então iniciar a aplicação
+CMD ["/wait-for-it.sh", "./goexpert-clean-architecture"]

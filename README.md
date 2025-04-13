@@ -71,7 +71,7 @@ Desafio realizado no curso Go Expert no módulo de Clean Architecture com GO.
 
 **Criar pedido:**
 
-      grpcurl -plaintext -d '{"id":"6","price": 120.2, "tax": 0.6}' localhost:50051 pb.OrderService/CreateOrder
+    grpcurl -plaintext -d '{"id":"6","price": 120.2, "tax": 0.6}' localhost:50051 pb.OrderService/CreateOrder
 
 
 **Listar pedidos:**
