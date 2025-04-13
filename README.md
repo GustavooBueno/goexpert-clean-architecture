@@ -43,29 +43,19 @@ Desafio realizado no curso Go Expert no módulo de Clean Architecture com GO.
 
 - **Criar pedido:**
 
-  ```graphql
-  mutation createOrder {
-    createOrder(input: {id: "10", Price: 60.5, Tax: 0.21}) {
-      id
-      Price
-      Tax
-      FinalPrice
-    }
-  }
+  ```sh
+    curl -X POST http://localhost:8080/query \
+     -H "Content-Type: application/json" \
+     -d '{"query": "mutation { createOrder(input: {id: \"123\", Price: 100.50, Tax: 0.15}) { id Price Tax FinalPrice } }"}'
   ```
 
 - **Listar pedidos:**
-
-  ```graphql
-  query  {
-    listOrders {
-      id
-      Price
-      Tax
-      FinalPrice
-    }
-  }
-  ```
+  
+```sh
+  curl -X POST http://localhost:8080/query \
+  -H "Content-Type: application/json" \
+  -d '{"query": "query { listOrders { id Price Tax FinalPrice } }"}'
+ ```
 
 ### GRPC 
 
