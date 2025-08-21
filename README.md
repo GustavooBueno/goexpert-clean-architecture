@@ -1,6 +1,4 @@
-# Go expert: Desafio Clean Architecture
-
-Desafio realizado no curso Go Expert no módulo de Clean Architecture com GO.
+# Clean Architecture + API + GraphQL + gRPC
 
 ## Como executar?
 
